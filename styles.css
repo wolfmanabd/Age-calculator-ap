@@ -41,8 +41,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-width: 1450px;
     min-height: 100vh;
+    max-width: 1450px;
     background-color: hsl(0, 0%, 94%);
     font-size: 2rem;
 }
@@ -59,11 +59,12 @@ body {
     align-items: center;
 }
 
-.title {
+h2 {
     font-family: Bold;
     font-size: .8rem;
     letter-spacing: 2px;
     color: hsl(0, 0%, 8%);
+    margin-bottom: .2rem;
 }
 
 .inputs {
@@ -98,7 +99,7 @@ input:focus {
     border-top: solid 1px hsl(0, 0%, 86%);
 }
 
-.submit-button {
+#submit-button {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,35 +111,37 @@ input:focus {
     background-color: hsl(250, 100%, 65%);
 }
 
-.submit-button:hover {
+#submit-button:hover {
     background-color: hsl(0, 0%, 8%);
     scale: 110%;
     transition-duration: 500ms;
 }
 
-img {
-    width: 28px;
+#submit-button > img {
+    width: 30px;
 }
 
-p {
+#results > p {
     font-family: ExtraBoldItalic;
     font-size: 3.2rem;
 }
 
 .res-span {
     font-family: ExtraBoldItalic;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     color: hsl(250, 100%, 65%);
 }
 
 .error {
     display: none;
     color: hsl(0, 100%, 67%);
-    margin-top: .3rem;
+    font-family: Italic;
+    margin-top: .4rem;
 }
 
 .error-title {
     color: hsl(0, 100%, 67%);
+    font-size: 1.2rem;
 }
 
 @media(min-width:700px) {
@@ -165,7 +168,7 @@ p {
     }
 
     .error {
-        font-size: .7rem;
+        font-size: .75rem;
     }
 }
 
@@ -174,19 +177,22 @@ p {
         width: 350px;
     }
 
-    .input-item {
-        height: 100vh;
+    .inputs {
+        /* height: 100vh; */
         display: flex;
         flex-direction: column;
     }
 
-    .inputs {
+    .input-item {
         width: 300px;
         justify-content: space-between;
+        margin-bottom: 3rem;
     }
 
     .input {
         width: 90px;
+        margin-right: 0;
+
     }
 
     .submit {
@@ -197,11 +203,11 @@ p {
         width: 100%;
     }
 
-    #divivder {
-        width: 105%;
+    #divider {
+        width: 107%;
     }
 
-    .submit-button {
+    #submit-button {
         position: relative;
         border-radius: 100%;
         bottom: 22px;
@@ -217,8 +223,12 @@ p {
     }
 }
 
+footer{
+    font-size: 11px;
+    text-align: center;
+    color: hsl(0, 0%, 8%);
+}
 
-
-.attribution {
-    font-size: 16px;
+footer a{
+    color: hsl(259, 100%, 65%);
 }

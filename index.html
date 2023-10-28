@@ -11,48 +11,49 @@
 
 </head>
 <body>
-  <div class="container">
-      <div class="input-item">
-        <div id="day" class="inputs">
-          <h2 class="title">DAY</h2>
-          <input onkeyup="typing()" type="text" class="input" id="input-day" placeholder="DD">
-          <span class="error" id="day-error"></span>
+  <main>
+    <div class="container">
+        <div id="input-date" class="input-item">
+          <div id="day" class="inputs">
+            <h2 class="title">DAY</h2>
+            <input onkeyup="typing()" type="text" class="input" id="input-day" placeholder="DD">
+            <span class="error" id="day-error"></span>
+          </div>
+          <div id="month" class="inputs">
+            <h2 class="title">MONTH</h2>
+            <input onkeyup="typing()" type="text" class="input" id="input-month" placeholder="MM">
+            <span class="error" id="month-error"></span>
+          </div>
+          <div id="year" class="inputs">
+            <h2 class="title">YEAR</h2>
+            <input onkeyup="typing()" type="text" class="input" id="input-year" placeholder="YYYY">
+            <span class="error" id="year-error"></span>
+          </div>
         </div>
-        <div id="month" class="inputs">
-          <h2 class="title">MONTH</h2>
-          <input onkeyup="typing()" type="text" class="input" id="input-month" placeholder="MM">
-          <span class="error" id="month-error"></span>
+        <div class="submit">
+          <div id="divider"></div>
+          <div id="submit-button">
+            <img src="assets/images/icon-arrow.svg" alt="">
+          </div>
         </div>
-        <div id="year" class="inputs">
-          <h2 class="title">YEAR</h2>
-          <input onkeyup="typing()" type="text" class="input" id="input-year" placeholder="YYYY">
-          <span class="error" id="year-error"></span>
-        </div>
+      <div id="results">
+        <p>
+          <span class="res-span" id="year-span">--</span> years
+        </p>
+        <p>
+          <span class="res-span" id="month-span">--</span> months
+        </p>
+        <p>
+          <span class="res-span" id="day-span">--</span> days
+        </p>
       </div>
-      <div class="submit">
-        <div id="divider"></div>
-        <div class="submit-button">
-          <img src="assets/images/icon-arrow.svg" alt="">
-        </div>
-      </div>
-    <div id="reults">
-      <p>
-        <span class="res-span" id="year-span">--</span> years
-      </p>
-      <p>
-        <span class="res-span" id="month-span">--</span> months
-      </p>
-      <p>
-        <span class="res-span" id="day-span">--</span> days
-      </p>
     </div>
-  </div>
+  </main>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Abdullahi Akinyoola</a>.
-  </div>
+  <footer>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Abdullahi Akinyoola</a>.
+  </footer>
 
   <script src="script.js"></script>
 </body>

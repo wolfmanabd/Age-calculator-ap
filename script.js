@@ -1,19 +1,19 @@
-const inputDay = document.querySelectorAll("#input-day");
-const inputMonth = document.querySelectorAll("#input-month");
-const inputYear = document.querySelectorAll("#input-year");
+const inputDay = document.getElementById("input-day");
+const inputMonth = document.getElementById("input-month");
+const inputYear = document.getElementById("input-year");
 const allInput = document.querySelectorAll(".input");
-const submitButton = document.querySelectorAll('.submit-button');
+const confirmButton = document.getElementById('submit-button');
 const titles = document.querySelectorAll('.title');
 const resultSpans = document.querySelectorAll('.res-span');
-const dayError = document.querySelectorAll('.day-error');
-const monthError = document.querySelectorAll('.month-error');
-const yearError = document.querySelectorAll('.year-error');
-const dayResult = document.querySelectorAll('.day-span');
-const monthResult = document.querySelectorAll('.month-span');
-const yearResult = document.querySelectorAll('.year-span');
+const dayError = document.getElementById('day-error');
+const monthError = document.getElementById('month-error');
+const yearError = document.getElementById('year-error');
+const dayResult = document.getElementById('day-span');
+const monthResult = document.getElementById('month-span');
+const yearResult = document.getElementById('year-span');
 
 
-submitButton.addEventListener('click', e => {
+confirmButton.addEventListener("click", e => {
     let day = inputDay.value.trim();
     let month = inputMonth.value.trim();
     let year = inputYear.value.trim();
@@ -81,7 +81,7 @@ submitButton.addEventListener('click', e => {
 
 function errorFunc() {
     titles.forEach(title => {
-        title.className += "error-title";
+        title.className += " error-title"
     });
 
     allInput.forEach(input => {
@@ -117,13 +117,13 @@ function typing() {
         element.innerText = "--";
     });
 
-    if (dayError.style.display = "block") {
-        dayError.style.display = "none";
+    if (dayError.style.display = "block"){
+      ;  dayError.style.display = "none";
     }
-    if (monthError.style.display = "block") {
+    if (monthError.style.display = "block"){
         monthError.style.display = "none";
-    }
-    if (yearError.style.display = "block") {
+    };
+    if (yearError.style.display = "block"){
         yearError.style.display = "none";
-    }
+    };
 }
